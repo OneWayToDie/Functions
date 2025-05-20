@@ -165,7 +165,7 @@ void MaxValueIn(int arr[], const int n)
 			max = arr[i];
 		}
 	}
-	cout << "минимальное значение массива - " << max << endl;
+	cout << "максимальное значение массива - " << max << endl;
 }
 void Shift_left(int arr[], const int n)
 {
