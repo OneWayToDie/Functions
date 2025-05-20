@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -20,30 +20,30 @@ void main()
 {
 	setlocale(LC_ALL, "");
 
-	cout << "\n" << "Àëãîðèòì äëÿ âûâîäà ñóììû ìàññèâà â int: " << "\n";
+	cout << "ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð° ÑÑƒÐ¼Ð¼Ñ‹ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð² double: " << "\n";
 	const int XD = 10;
 	double crr[XD];
 	FillRand(crr, XD);
 	Print(crr, XD);
 	Sum(crr, XD);
-	cout << "\n" << "Àëãîðèòì äëÿ âûâîäà AVG ìàññèâà â int: " << "\n";
+	cout << "\n" << "ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð° AVG Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð² double: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	AVG(crr, XD);
-	cout << "\n" << "Àëãîðèòì äëÿ âûâîäà ìèíèìàëüíîãî çíà÷åíèÿ ìàññèâà â int: " << "\n";
+	cout << "\n" << "ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð² double: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	MinValueIn(crr, XD);
-	cout << "\n" << "Àëãîðèòì äëÿ âûâîäà ìàêñèìàëüíîãî çíà÷åíèÿ ìàññèâà â int: " << "\n";
+	cout << "\n" << "ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð² double: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	MaxValueIn(crr, XD);
-	cout << "\n" << "Àëãîðèòì äëÿ ñäâèãà ìàññèâà âëåâî â int: " << "\n";
+	cout << "\n" << "ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼ Ð´Ð»Ñ ÑÐ´Ð²Ð¸Ð³Ð° Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð»ÐµÐ²Ð¾ Ð² double: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	Shift_left(crr, XD);
 	Print(crr, XD);
-	cout << "\n" << "Àëãîðèòì äëÿ ñäâèãà ìàññèâà âïðàâî â int: " << "\n";
+	cout << "\n" << "ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼ Ð´Ð»Ñ ÑÐ´Ð²Ð¸Ð³Ð° Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð¿Ñ€Ð°Ð²Ð¾ Ð² double: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	Shift_right(crr, XD);
@@ -90,7 +90,7 @@ void Sum(double arr[], const int n)
 	{
 		sum = sum + arr[i];
 	}
-	cout << "\n" << "ñóììà ýëåìåíòîâ ìàññèâà - " << sum << "\n";
+	cout << "\n" << "ÑÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° - " << sum << "\n";
 }
 void AVG(double arr[], const int n)
 {
@@ -99,11 +99,11 @@ void AVG(double arr[], const int n)
 	{
 		sum = sum + arr[i];
 	}
-	cout << "\n" << "Ñðåäíåå àðèôìåòè÷åñêîå - " << sum / n << "\n";
+	cout << "\n" << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ - " << sum / n << "\n";
 }
 void MinValueIn(double arr[], const int n)
 {
-	int min = arr[0];
+	double min = arr[0];
 	for (int i = 0; i < n; i++)
 	{
 		if (arr[i] < min)
@@ -111,11 +111,11 @@ void MinValueIn(double arr[], const int n)
 			min = arr[i];
 		}
 	}
-	cout << "ìèíèìàëüíîå çíà÷åíèå ìàññèâà - " << min << endl;
+	cout << "\n" << "Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° - " << min << endl;
 }
 void MaxValueIn(double arr[], const int n)
 {
-	int max = arr[0];
+	double max = arr[0];
 	for (int i = 0; i < n; i++)
 	{
 		if (arr[i] > max)
@@ -123,11 +123,11 @@ void MaxValueIn(double arr[], const int n)
 			max = arr[i];
 		}
 	}
-	cout << "ìèíèìàëüíîå çíà÷åíèå ìàññèâà - " << max << endl;
+	cout << "\n" << "Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° - " << max << endl;
 }
 void Shift_left(double arr[], const int n)
 {
-	int number_of_shifts; cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shifts;
+	int number_of_shifts; cout << "\n" << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shifts;
 	double zero;
 	for (int j = 0; j < number_of_shifts; j++)
 	{
@@ -140,7 +140,7 @@ void Shift_left(double arr[], const int n)
 }
 void Shift_right(double arr[], const int n)
 {
-	int number_of_shifts; cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shifts;
+	int number_of_shifts; cout << "\n" << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shifts;
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		double buffer = arr[n - 1];
