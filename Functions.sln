@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays_double", "Arrays_dou
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays_char", "Arrays_char\Arrays_char.vcxproj", "{CCE887E3-66A5-4E0B-AA64-7BE695D1ECE9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays_float", "Arrays_float\Arrays_float.vcxproj", "{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{CCE887E3-66A5-4E0B-AA64-7BE695D1ECE9}.Release|x64.Build.0 = Release|x64
 		{CCE887E3-66A5-4E0B-AA64-7BE695D1ECE9}.Release|x86.ActiveCfg = Release|Win32
 		{CCE887E3-66A5-4E0B-AA64-7BE695D1ECE9}.Release|x86.Build.0 = Release|Win32
+		{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}.Debug|x64.ActiveCfg = Debug|x64
+		{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}.Debug|x64.Build.0 = Debug|x64
+		{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}.Debug|x86.Build.0 = Debug|Win32
+		{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}.Release|x64.ActiveCfg = Release|x64
+		{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}.Release|x64.Build.0 = Release|x64
+		{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}.Release|x86.ActiveCfg = Release|Win32
+		{AD6157F0-FEE5-4919-9049-CAAFAD7D7405}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
