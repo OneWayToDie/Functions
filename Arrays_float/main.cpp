@@ -17,30 +17,30 @@ void main()
 {
 	setlocale(LC_ALL, "");
 
-	cout << "Алгоритм для вывода суммы массива в double: " << "\n";
+	cout << "Алгоритм для вывода суммы массива в float: " << "\n";
 	const int XD = 10;
 	float crr[XD];
 	FillRand(crr, XD);
 	Print(crr, XD);
 	Sum(crr, XD);
-	cout << "\n" << "Алгоритм для вывода AVG массива в double: " << "\n";
+	cout << "\n" << "Алгоритм для вывода AVG массива в float: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	AVG(crr, XD);
-	cout << "\n" << "Алгоритм для вывода минимального значения массива в double: " << "\n";
+	cout << "\n" << "Алгоритм для вывода минимального значения массива в float: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	MinValueIn(crr, XD);
-	cout << "\n" << "Алгоритм для вывода максимального значения массива в double: " << "\n";
+	cout << "\n" << "Алгоритм для вывода максимального значения массива в float: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	MaxValueIn(crr, XD);
-	cout << "\n" << "Алгоритм для сдвига массива влево в double: " << "\n";
+	cout << "\n" << "Алгоритм для сдвига массива влево в float: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	Shift_left(crr, XD);
 	Print(crr, XD);
-	cout << "\n" << "Алгоритм для сдвига массива вправо в double: " << "\n";
+	cout << "\n" << "Алгоритм для сдвига массива вправо в float: " << "\n";
 	FillRand(crr, XD);
 	Print(crr, XD);
 	Shift_right(crr, XD);
@@ -49,12 +49,12 @@ void main()
 
 void FillRand(float arr[], const int n, int MinRand, int MaxRand)
 {
-	MinRand *= 100;
-	MaxRand *= 100;
+	MinRand *= 100000;
+	MaxRand *= 100000;
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (MaxRand - MinRand) + MinRand;
-		arr[i] /= 100;
+		arr[i] /= 100000;
 	}
 }
 void Print(float arr[], const int n)
