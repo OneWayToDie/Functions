@@ -46,10 +46,10 @@ void main()
 	cout << "\n" << "Сдвиг массива вправо - "; cin >> number_of_shifts;
 	ShiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
+
+
 	const int SIZE = 8;
 	double brr[SIZE];
-
-
 	Print(brr, SIZE);
 	cout << "\n" << "Сумма элементов массива: " << Sum(brr, SIZE) << endl;
 	cout << "\n" << "Среднее арифметическое массива: " << AVG(brr, SIZE) << endl;
