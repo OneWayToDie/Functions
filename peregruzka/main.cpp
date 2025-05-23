@@ -27,7 +27,7 @@ void main()
 	cout << "\n" << "Сдвиг массива вправо - "; cin >> number_of_shifts;
 	ShiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
-
+	 
 	cout << "\n";
 	const int SIZE = 8;
 	double brr[SIZE];
