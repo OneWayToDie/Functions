@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays_float", "Arrays_floa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "peregruzka", "peregruzka\peregruzka.vcxproj", "{A07958A8-1FB1-4BF4-B259-C4CA1B38959C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2D_Arrays", "2D_Arrays\2D_Arrays.vcxproj", "{49E5EE55-3A8C-47D8-8039-97F5182E015C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{A07958A8-1FB1-4BF4-B259-C4CA1B38959C}.Release|x64.Build.0 = Release|x64
 		{A07958A8-1FB1-4BF4-B259-C4CA1B38959C}.Release|x86.ActiveCfg = Release|Win32
 		{A07958A8-1FB1-4BF4-B259-C4CA1B38959C}.Release|x86.Build.0 = Release|Win32
+		{49E5EE55-3A8C-47D8-8039-97F5182E015C}.Debug|x64.ActiveCfg = Debug|x64
+		{49E5EE55-3A8C-47D8-8039-97F5182E015C}.Debug|x64.Build.0 = Debug|x64
+		{49E5EE55-3A8C-47D8-8039-97F5182E015C}.Debug|x86.ActiveCfg = Debug|Win32
+		{49E5EE55-3A8C-47D8-8039-97F5182E015C}.Debug|x86.Build.0 = Debug|Win32
+		{49E5EE55-3A8C-47D8-8039-97F5182E015C}.Release|x64.ActiveCfg = Release|x64
+		{49E5EE55-3A8C-47D8-8039-97F5182E015C}.Release|x64.Build.0 = Release|x64
+		{49E5EE55-3A8C-47D8-8039-97F5182E015C}.Release|x86.ActiveCfg = Release|Win32
+		{49E5EE55-3A8C-47D8-8039-97F5182E015C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
