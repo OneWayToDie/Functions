@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -37,15 +37,15 @@ void main()
 	Print(arr, n);
 	Sort(arr, n);
 	Print(arr, n);
-	cout << "\n" << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(arr, n) << endl;
-	cout << "\n" << "Ñðåäíåå àðèôìåòè÷åñêîå ìàññèâà: " << AVG(arr, n) << endl;
-	cout << "\n" << "Âûâîä Ìèíèìàëüíîãî çíà÷åíèÿ ìàññèâà: " << MinValueIn(arr, n) << endl;
-	cout << "\n" << "Âûâîä Ìàêñèìàëüíîãî çíà÷åíèÿ ìàññèâà: " << MaxValueIn(arr, n) << endl;
+	cout << "\n" << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(arr, n) << endl;
+	cout << "\n" << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << AVG(arr, n) << endl;
+	cout << "\n" << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << MinValueIn(arr, n) << endl;
+	cout << "\n" << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << MaxValueIn(arr, n) << endl;
 	int number_of_shifts;
-	cout << "\n" << "Ñäâèã ìàññèâà âëåâî - "; cin >> number_of_shifts; 
+	cout << "\n" << "Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð»ÐµÐ²Ð¾ - "; cin >> number_of_shifts; 
 	ShiftLeft(arr, n, number_of_shifts);
 	Print(arr, n);
-	cout << "\n" << "Ñäâèã ìàññèâà âïðàâî - "; cin >> number_of_shifts;
+	cout << "\n" << "Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð¿Ñ€Ð°Ð²Ð¾ - "; cin >> number_of_shifts;
 	ShiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
 
@@ -56,10 +56,10 @@ void main()
 	Print(brr, SIZE);
 	Sort(brr, SIZE);
 	Print(brr, SIZE);
-	cout << "\n" << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(brr, SIZE) << endl;
-	cout << "\n" << "Ñðåäíåå àðèôìåòè÷åñêîå ìàññèâà: " << AVG(brr, SIZE) << endl;
-	cout << "\n" << "Âûâîä Ìèíèìàëüíîãî çíà÷åíèÿ ìàññèâà: " << MinValueIn(brr, SIZE) << endl;
-	cout << "\n" << "Âûâîä Ìàêñèìàëüíîãî çíà÷åíèÿ ìàññèâà: " << MaxValueIn(brr, SIZE) << endl;
+	cout << "\n" << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(brr, SIZE) << endl;
+	cout << "\n" << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << AVG(brr, SIZE) << endl;
+	cout << "\n" << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << MinValueIn(brr, SIZE) << endl;
+	cout << "\n" << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << MaxValueIn(brr, SIZE) << endl;
 }
 
 void FillRand(int arr[], const int n, int MinRand, int MaxRand)
