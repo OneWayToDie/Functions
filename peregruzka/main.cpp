@@ -47,16 +47,16 @@ void main()
 	ShiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
 
-
+	cout << "\n";
 	const int SIZE = 8;
 	double brr[SIZE];
+	FillRand(brr, SIZE);
+	cout << "Вывод массива в double: " << endl;
 	Print(brr, SIZE);
 	cout << "\n" << "Сумма элементов массива: " << Sum(brr, SIZE) << endl;
 	cout << "\n" << "Среднее арифметическое массива: " << AVG(brr, SIZE) << endl;
 	cout << "\n" << "Вывод Минимального значения массива: " << MinValueIn(brr, SIZE) << endl;
 	cout << "\n" << "Вывод Максимального значения массива: " << MaxValueIn(brr, SIZE) << endl;
-
-
 }
 
 void FillRand(int arr[], const int n, int MinRand, int MaxRand)
