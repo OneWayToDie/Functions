@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 const int Rows = 3;
@@ -38,28 +38,28 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	
-	cout << "Âûâîä íàøåãî äâóìåðíîãî ìàññèâà íà ýêðàí: " << "\n\n";
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ð½Ð°ÑˆÐµÐ³Ð¾ Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½: " << "\n\n";
 	int arr[Rows][Cols];
 	FillRand(arr, Rows, Cols);
 	Print(arr, Rows, Cols);
-	cout << "Âûâîä îòñîðòèðîâàííîãî  ìàññèâà íà ýêðàí: " << "\n\n";
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ð¾Ñ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ð¾Ð³Ð¾  Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½: " << "\n\n";
 	Sort(arr, Rows, Cols);
 	Print(arr, Rows, Cols);
-	cout << "\n" << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(arr, Rows, Cols) << endl;
-	cout << "\n" << "Ñðåäíåå àðèôìåòè÷åñêîå äâóìåðíîãî ìàññèâà: " << AVG(arr, Rows, Cols) << endl;
-	cout << "\n" << "Âûâîä Ìèíèìàëüíîãî çíà÷åíèÿ ìàññèâà: " << MinValueIn(arr, Rows, Cols) << endl;
-	cout << "\n" << "Âûâîä Ìèíèìàëüíîãî çíà÷åíèÿ ìàññèâà: " << MaxValueIn(arr, Rows, Cols) << endl;
+	cout << "\n" << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(arr, Rows, Cols) << endl;
+	cout << "\n" << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << AVG(arr, Rows, Cols) << endl;
+	cout << "\n" << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << MinValueIn(arr, Rows, Cols) << endl;
+	cout << "\n" << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << MaxValueIn(arr, Rows, Cols) << endl;
 	int number_of_shifts;
 
 	const int odnomerka = Rows * Cols;
 	int perevod[odnomerka];
 	int index_massiva = 0;
-	cout << "\n" << "Ñäâèã ìàññèâà âëåâî: "; cin >> number_of_shifts;
+	cout << "\n" << "Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð»ÐµÐ²Ð¾: "; cin >> number_of_shifts;
 	Perevod_v_odnomernbi(arr, Rows, Cols, perevod, index_massiva);
 	ShiftLeft(arr, Rows, Cols, number_of_shifts, perevod);
 	Perevod_v_2D(arr, Rows, Cols, perevod, index_massiva);
 	Print(arr, Rows, Cols);
-	cout << "\n" << "Ñäâèã ìàññèâà âïðàâî: "; cin >> number_of_shifts;
+	cout << "\n" << "Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð¿Ñ€Ð°Ð²Ð¾: "; cin >> number_of_shifts;
 	ShiftRight(arr, Rows, Cols, number_of_shifts, perevod);
 	Perevod_v_2D(arr, Rows, Cols, perevod, index_massiva);
 	Print(arr, Rows, Cols);
@@ -94,7 +94,7 @@ void Perevod_v_odnomernbi(T arr[Rows][Cols], const int Rows, const int Cols, int
 	{
 		for (int j = 0; j < Cols; j++)
 		{
-			perevod[index_massiva] = arr[i][j]; // ïåðåâîäèì äâóìåðíûé ìàññèâ â îäíîìåðíûé
+			perevod[index_massiva] = arr[i][j]; // Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð² Ð¾Ð´Ð½Ð¾Ð¼ÐµÑ€Ð½Ñ‹Ð¹
 			index_massiva++;
 		}
 	}
@@ -107,7 +107,7 @@ void Perevod_v_2D(T arr[Rows][Cols], const int Rows, const int Cols, int perevod
 	{
 		for (int j = 0; j < Cols; j++)
 		{
-			arr[i][j] = perevod[index_massiva]; // ïåðåâîäèì ìàññèâ îáðàòíî â äâóìåðíûé
+			arr[i][j] = perevod[index_massiva]; // Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð¼Ð°ÑÑÐ¸Ð² Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾ Ð² Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ñ‹Ð¹
 			index_massiva++;
 		}
 	}
@@ -159,7 +159,7 @@ T Sum(T arr[Rows][Cols], const int Rows, const int Cols)
 	{
 		for (int j = 0; j < Cols; j++)
 		{
-			sum = sum + arr[i][j]; // Öèêë äëÿ íàõîæäåíèÿ ñóììû
+			sum = sum + arr[i][j]; // Ð¦Ð¸ÐºÐ» Ð´Ð»Ñ Ð½Ð°Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ ÑÑƒÐ¼Ð¼Ñ‹
 		}
 	}
 	return sum;
@@ -213,7 +213,7 @@ void ShiftLeft(int arr[Rows][Cols], const int Rows, const int Cols, const int nu
 		tochka_sdviga = perevod[0];
 		for (int i = 0; i < Rows * Cols; i++)
 		{
-			i + 1 < Rows * Cols ? perevod[i] = perevod[i + 1] : perevod[i] = tochka_sdviga; // äåëàåì ñäâèã âëåâî
+			i + 1 < Rows * Cols ? perevod[i] = perevod[i + 1] : perevod[i] = tochka_sdviga; // Ð´ÐµÐ»Ð°ÐµÐ¼ ÑÐ´Ð²Ð¸Ð³ Ð²Ð»ÐµÐ²Ð¾
 		}
 	}
 }
