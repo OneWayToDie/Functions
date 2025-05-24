@@ -94,7 +94,7 @@ void Perevod_v_odnomernbi(T arr[Rows][Cols], const int Rows, const int Cols, int
 	{
 		for (int j = 0; j < Cols; j++)
 		{
-			perevod[index_massiva] = arr[i][j]; // переводим двумерный массив в одномерный
+			perevod[index_massiva] = arr[i][j];
 			index_massiva++;
 		}
 	}
@@ -107,7 +107,7 @@ void Perevod_v_2D(T arr[Rows][Cols], const int Rows, const int Cols, int perevod
 	{
 		for (int j = 0; j < Cols; j++)
 		{
-			arr[i][j] = perevod[index_massiva]; // переводим массив обратно в двумерный
+			arr[i][j] = perevod[index_massiva];
 			index_massiva++;
 		}
 	}
@@ -159,7 +159,7 @@ T Sum(T arr[Rows][Cols], const int Rows, const int Cols)
 	{
 		for (int j = 0; j < Cols; j++)
 		{
-			sum = sum + arr[i][j]; // Цикл для нахождения суммы
+			sum = sum + arr[i][j]; 
 		}
 	}
 	return sum;
@@ -213,7 +213,7 @@ void ShiftLeft(int arr[Rows][Cols], const int Rows, const int Cols, const int nu
 		tochka_sdviga = perevod[0];
 		for (int i = 0; i < Rows * Cols; i++)
 		{
-			i + 1 < Rows * Cols ? perevod[i] = perevod[i + 1] : perevod[i] = tochka_sdviga; // делаем сдвиг влево
+			i + 1 < Rows * Cols ? perevod[i] = perevod[i + 1] : perevod[i] = tochka_sdviga;
 		}
 	}
 }
