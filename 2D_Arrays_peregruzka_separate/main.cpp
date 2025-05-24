@@ -1,4 +1,4 @@
-#include"stdafx.h"
+ï»¿#include"stdafx.h"
 #include"FillRand.h"
 #include"Perevod_1D_2D.h"
 #include"Print.h"
@@ -12,28 +12,28 @@ void main()
 {
 	setlocale(LC_ALL, "");
 
-	cout << "Âûâîä íàøåãî äâóìåðíîãî ìàññèâà íà ýêðàí: " << "\n\n";
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ð½Ð°ÑˆÐµÐ³Ð¾ Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½: " << "\n\n";
 	int arr[Rows][Cols];
 	FillRand(arr, Rows, Cols);
 	Print(arr, Rows, Cols);
-	cout << "Âûâîä îòñîðòèðîâàííîãî  ìàññèâà íà ýêðàí: " << "\n\n";
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ð¾Ñ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ð¾Ð³Ð¾  Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½: " << "\n\n";
 	Sort(arr, Rows, Cols);
 	Print(arr, Rows, Cols);
-	cout << "\n" << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(arr, Rows, Cols) << endl;
-	cout << "\n" << "Ñðåäíåå àðèôìåòè÷åñêîå äâóìåðíîãî ìàññèâà: " << AVG(arr, Rows, Cols) << endl;
-	cout << "\n" << "Âûâîä Ìèíèìàëüíîãî çíà÷åíèÿ ìàññèâà: " << MinValueIn(arr, Rows, Cols) << endl;
-	cout << "\n" << "Âûâîä Ìèíèìàëüíîãî çíà÷åíèÿ ìàññèâà: " << MaxValueIn(arr, Rows, Cols) << endl;
+	cout << "\n" << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(arr, Rows, Cols) << endl;
+	cout << "\n" << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << AVG(arr, Rows, Cols) << endl;
+	cout << "\n" << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << MinValueIn(arr, Rows, Cols) << endl;
+	cout << "\n" << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << MaxValueIn(arr, Rows, Cols) << endl;
 	int number_of_shifts;
 
 	const int odnomerka = Rows * Cols;
 	int perevod[odnomerka];
 	int index_massiva = 0;
-	cout << "\n" << "Ñäâèã ìàññèâà âëåâî: "; cin >> number_of_shifts;
+	cout << "\n" << "Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð»ÐµÐ²Ð¾: "; cin >> number_of_shifts;
 	Perevod_v_odnomernbi(arr, Rows, Cols, perevod, index_massiva);
 	ShiftLeft(arr, Rows, Cols, number_of_shifts, perevod);
 	Perevod_v_2D(arr, Rows, Cols, perevod, index_massiva);
 	Print(arr, Rows, Cols);
-	cout << "\n" << "Ñäâèã ìàññèâà âïðàâî: "; cin >> number_of_shifts;
+	cout << "\n" << "Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð¿Ñ€Ð°Ð²Ð¾: "; cin >> number_of_shifts;
 	ShiftRight(arr, Rows, Cols, number_of_shifts, perevod);
 	Perevod_v_2D(arr, Rows, Cols, perevod, index_massiva);
 	Print(arr, Rows, Cols);
