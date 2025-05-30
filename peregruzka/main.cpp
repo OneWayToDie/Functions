@@ -10,6 +10,7 @@ void FillRand(int arr[], const int n, int MinRand = 0, int MaxRand = 100);
 void FillRand(double arr[], const int n, int MinRand = 0, int MaxRand = 100);
 void FillRand(int arr[Rows][Cols], const int Rows, const int Cols, int MinRand = 0, int MaxRand = 100);
 
+
 template<typename T> void Print(T arr[], const int n);
 template<typename T> void Print(T arr[Rows][Cols], const int Rows, const int Cols);
 
