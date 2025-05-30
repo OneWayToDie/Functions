@@ -82,9 +82,9 @@ void main()
 	cout << "Введите воличество сдвигов: "; cin >> number_of_shifts;
 	ShiftLeft(i_arr_2, Rows, Cols, number_of_shifts);
 	Print(i_arr_2, Rows, Cols);
-	/*cout << "Введите воличество сдвигов: "; cin >> number_of_shifts;
+	cout << "Введите воличество сдвигов: "; cin >> number_of_shifts;
 	ShiftRight(i_arr_2, Rows, Cols, number_of_shifts);
-	Print(i_arr_2, Rows, Cols);*/
+	Print(i_arr_2, Rows, Cols);
 
 }
 
@@ -269,23 +269,23 @@ template<typename T> void ShiftRight(T arr[], const int n, const int number_of_s
 }
 template<typename T> void ShiftLeft(T arr[Rows][Cols], const int Rows, const int Cols, int number_of_shifts)
 {
-	for (int i = 0; i < Rows; i++)
+	/*for (int i = 0; i < Rows; i++)
 	{
 		ShiftLeft(arr[i], Cols, number_of_shifts);
+	}*/
+	for (int i = 0; i < number_of_shifts; i++)
+	{
+		T buffer = arr[0][0];
+		for (int i = 0; i < Rows; i++)
+		{
+			for (int j = 1; j < Cols; j++)
+			{
+				arr[i][j - 1] = arr[i][j];
+			}
+			arr[i][Cols - 1] = arr[i + 1][0];
+		}
+		arr[Rows - 1][Cols - 1] = buffer;
 	}
-	//for (int i = 0; i < number_of_shifts; i++)
-	//{
-	//	T buffer = arr[0][0];
-	//	for (int i = 0; i < Rows; i++)
-	//	{
-	//		for (int j = 1; j < Cols; j++)
-	//		{
-	//			arr[i][j - 1] = arr[i][j];
-	//		}
-	//		arr[i][Cols - 1] = arr[i + 1][0];
-	//	}
-	//	arr[Rows - 1][Cols - 1] = buffer;
-	//}
 }
 template<typename T> void ShiftRight(T arr[Rows][Cols], const int Rows, const int Cols, int number_of_shifts)
 {
