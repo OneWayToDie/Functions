@@ -1,17 +1,10 @@
-﻿#include<iostream>
-using namespace std;
+﻿#include"stdafx.h"
+#include"constants.h"
+#include"FillRand.h"
+//#include"FillRand.cpp" // реализации нешаблонных функций никогда не подключаются на место вызова
+#include"Print.h"
+#include"Print.cpp" // реализации шаблонных функций в обязательном порядке подключаются на место вызова
 
-#define tab "\t"
-
-const int Rows = 5;
-const int Cols = 8;
-
-void FillRand(int arr[], const int n, int MinRand = 0, int MaxRand = 100);
-void FillRand(double arr[], const int n, int MinRand = 0, int MaxRand = 100);
-void FillRand(int arr[Rows][Cols], const int Rows, const int Cols, int MinRand = 0, int MaxRand = 100);
-
-template<typename T> void Print(T arr[], const int n);
-template<typename T> void Print(T arr[Rows][Cols], const int Rows, const int Cols);
 
 template<typename T> void Sort(T arr[], const int n);
 template<typename T> void Sort(T arr[Rows][Cols], const int Rows, const int Cols);
@@ -88,54 +81,9 @@ void main()
 
 }
 
-void FillRand(int arr[], const int n, int MinRand, int MaxRand)
-{
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (MaxRand - MinRand) + MinRand;
-	}
-}
-void FillRand(double arr[], const int n, int MinRand, int MaxRand)
-{
-	MinRand *= 100;
-	MaxRand *= 100;
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (MaxRand - MinRand) + MinRand;
-		arr[i] /= 100;
-	}
-}
-void FillRand(int arr[Rows][Cols], const int Rows, const int Cols, int MinRand, int MaxRand)
-{
-	for (int i = 0; i < Rows; i++)
-	{
-		for (int j = 0; j < Cols; j++)
-		{
-			arr[i][j] = rand() % (MaxRand - MinRand) + MinRand;
-		}
-	}
-}
 
-template<typename T> void Print(T arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << tab;
-	}
-	cout << endl;
-}
-template<typename T> void Print(T arr[Rows][Cols], const int Rows, const int Cols)
-{
-	for (int i = 0; i < Rows; i++)
-	{
-		for (int j = 0; j < Cols; j++)
-		{
-			cout << arr[i][j] << tab;
-		}
-		cout << endl;
-	}
-	cout << endl;
-}
+
+
 
 template<typename T> void Sort(T arr[], const int n)
 {
