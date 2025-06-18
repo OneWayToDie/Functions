@@ -10,7 +10,7 @@
 #include"Shift.h"
 #include"Shift.cpp"
 
-void main()
+void classic()
 {
 	setlocale(LC_ALL, "");
 
