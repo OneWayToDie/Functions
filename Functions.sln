@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "peregruzka", "peregruzka\pe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2D_Arrays_Peregruzka_Func", "2D_Arrays_Peregruzka_Func\2D_Arrays_Peregruzka_Func.vcxproj", "{DABD7C40-C294-4D8E-A96C-BC0B4AE7ABC9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplatedLIBCheck", "TemplatedLIBCheck\TemplatedLIBCheck.vcxproj", "{61499451-D0D2-4397-A76A-1E603D07638A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{DABD7C40-C294-4D8E-A96C-BC0B4AE7ABC9}.Release|x64.Build.0 = Release|x64
 		{DABD7C40-C294-4D8E-A96C-BC0B4AE7ABC9}.Release|x86.ActiveCfg = Release|Win32
 		{DABD7C40-C294-4D8E-A96C-BC0B4AE7ABC9}.Release|x86.Build.0 = Release|Win32
+		{61499451-D0D2-4397-A76A-1E603D07638A}.Debug|x64.ActiveCfg = Debug|x64
+		{61499451-D0D2-4397-A76A-1E603D07638A}.Debug|x64.Build.0 = Debug|x64
+		{61499451-D0D2-4397-A76A-1E603D07638A}.Debug|x86.ActiveCfg = Debug|Win32
+		{61499451-D0D2-4397-A76A-1E603D07638A}.Debug|x86.Build.0 = Debug|Win32
+		{61499451-D0D2-4397-A76A-1E603D07638A}.Release|x64.ActiveCfg = Release|x64
+		{61499451-D0D2-4397-A76A-1E603D07638A}.Release|x64.Build.0 = Release|x64
+		{61499451-D0D2-4397-A76A-1E603D07638A}.Release|x86.ActiveCfg = Release|Win32
+		{61499451-D0D2-4397-A76A-1E603D07638A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
