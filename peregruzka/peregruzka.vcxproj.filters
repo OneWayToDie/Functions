@@ -27,7 +27,7 @@
     <ClCompile Include="Sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Static.cpp">
+    <ClCompile Include="Statistic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Shift.cpp">
@@ -50,7 +50,7 @@
     <ClInclude Include="Sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Static.h">
+    <ClInclude Include="Statistic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Shift.h">

@@ -1,4 +1,4 @@
-#include"Static.h"
+#include"Statistic.h"
 
 
 template<typename T> T Sum(T arr[], const int n)

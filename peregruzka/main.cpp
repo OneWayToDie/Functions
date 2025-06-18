@@ -5,8 +5,8 @@
 #include"Print.cpp" // реализации шаблонных функций в обязательном порядке подключаются на место вызова
 #include"Sort.h"
 #include"Sort.cpp"
-#include"Static.h"
-#include"Static.cpp"
+#include"Statistic.h"
+#include"Statistic.cpp"
 #include"Shift.h"
 #include"Shift.cpp"
 
